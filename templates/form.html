@@ -14,7 +14,7 @@
 
     <div class="container">
         <h1 style=" margin-top: 50px;">Fill Your Details</h1>
-        <form action="/upload" method="POST">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="firstname"  class="form-label">First Name</label>
                 <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="enterYourName"
@@ -87,7 +87,7 @@
             <h6 style="margin-top: 20px;">Enter your profile picture</h6>
             <div class="input-group" style="margin-bottom: 40px;">
                 
-                <input type="file"  name="dp" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                <input type="file" accept="images/*" name="dp" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                     aria-label="Upload" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>

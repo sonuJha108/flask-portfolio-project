@@ -1,6 +1,9 @@
 from flask import Flask,render_template,redirect,request,url_for,flash,session
+import uuid
+import os
 
 app = Flask(__name__)
+
 
 app.secret_key = "maker-secret-key"
 
@@ -31,7 +34,15 @@ def upload():
         skill3 = request.form.get("skill3")
         skill4 = request.form.get("skill4")
         skill5 = request.form.get("skill5")
-    return ("Data is upload successfully","success")
+
+        key = uuid.uuid1()
+        #images upload files
+        img = request.files['dp']
+        img.save(f"static/images/{img.filename}")
+        img_new_name = f"{key}{img.filename}"
+        os.rename(f"static/images/{img.filename}",f"static/images/{img_new_name}")
+
+    return render_template('layout.html',dname=name,lname=lastname,img = img_new_name,sk1=skill1,sk2=skill2,sk3=skill3,sk4=skill4,ski5=skill5)
 
 if __name__ == "__main__":
     app.run(debug=True)
