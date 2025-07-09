@@ -14,39 +14,39 @@
 
     <div class="container">
         <h1 style=" margin-top: 50px;">Fill Your Details</h1>
-        <form action="/" method="POST">
+        <form action="/upload" method="POST">
             <div class="mb-3">
-                <label for="firstname" name="firstname" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstname" aria-describedby="enterYourName"
+                <label for="firstname"  class="form-label">First Name</label>
+                <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="enterYourName"
                     placeholder="Enter Your First Name" required>
             </div>
             <div class="mb-3">
-                <label for="lastname" name="lastname" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastname" aria-describedby="enterYourLastName"
+                <label for="lastname"  class="form-label">Last Name</label>
+                <input type="text" name="lastname" class="form-control" id="lastname" aria-describedby="enterYourLastName"
                     placeholder="Enter Your Last Name" required>
             </div>
 
             <div class="mb-3">
-                <label for="schoolname" name="schoolname" class="form-label">School Name</label>
-                <input type="text" class="form-control" id="schoolname" aria-describedby="enterYourSchoolName"
+                <label for="schoolname"  class="form-label">School Name</label>
+                <input type="text" name="schoolname" class="form-control" id="schoolname" aria-describedby="enterYourSchoolName"
                     placeholder="Enter Your School Name" required>
             </div>
 
             <div class="mb-3">
-                <label for="collegename" class="form-label" name="collegename">College Name (Optional)</label>
-                <input type="text" class="form-control" id="collegename" aria-describedby="enterYourCollegeName"
+                <label for="collegename" class="form-label" >College Name (Optional)</label>
+                <input type="text" name="collegename" class="form-control" id="collegename" aria-describedby="enterYourCollegeName"
                     placeholder="Enter Your College Name">
             </div>
 
             <div class="mb-3">
-                <label for="phonenumber" name="phonenumber" class="form-label">Phone No.(Without county code)</label>
-                <input type="text" class="form-control" id="phonenumber" aria-describedby="enterYourPhoneNumber"
+                <label for="phonenumber"  class="form-label">Phone No.(Without county code)</label>
+                <input type="text" name="phonenumber" class="form-control" id="phonenumber" aria-describedby="enterYourPhoneNumber"
                     placeholder="Enter Your Phone number" required>
             </div>
 
             <div class="mb-3">
-                <label for="email" name="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email"
+                <label for="email"  class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="email"
                     placeholder="your@email.com" required>
             </div>
 
@@ -57,37 +57,37 @@
 
 
             <div class="mb-3">
-                <label for="skill1" name="skill1" class="form-label">Enter your skills</label>
-                <input type="text" class="form-control" id="skill1" aria-describedby="enterYourSkill1"
+                <label for="skill1"  class="form-label">Enter your skills</label>
+                <input type="text" name="skill1" class="form-control" id="skill1" aria-describedby="enterYourSkill1"
                     placeholder="Enter Your Skill1" required>
             </div>
 
             <div class="mb-3">
-                <label for="skill2" name="skill2" class="form-label">Enter your skills</label>
-                <input type="text" class="form-control" id="skill2" aria-describedby="enterYourSkill2"
+                <label for="skill2"  class="form-label">Enter your skills</label>
+                <input type="text" name="skill2" class="form-control" id="skill2" aria-describedby="enterYourSkill2"
                     placeholder="Enter Your Skill2" required>
             </div>
 
             <div class="mb-3">
-                <label for="skill3" name="skill3" class="form-label">Enter your skills</label>
-                <input type="text" class="form-control" id="skill3" aria-describedby="enterYourSkill3"
+                <label for="skill3" class="form-label">Enter your skills</label>
+                <input type="text"  name="skill3" class="form-control" id="skill3" aria-describedby="enterYourSkill3"
                     placeholder="Enter Your Skill3" required>
             </div>
             <div class="mb-3">
-                <label for="skill4" name="skill4" class="form-label">Enter your skills</label>
-                <input type="text" class="form-control" id="skill4" aria-describedby="enterYourSkill4"
+                <label for="skill4"  class="form-label">Enter your skills</label>
+                <input type="text" name="skill4" class="form-control" id="skill4" aria-describedby="enterYourSkill4"
                     placeholder="Enter Your Skill4" required>
             </div>
             <div class="mb-3">
-                <label for="skill5" name="skill5" class="form-label">Enter your skills</label>
-                <input type="text" class="form-control" id="skill5" aria-describedby="enterYourSkill5"
+                <label for="skill5" class="form-label">Enter your skills</label>
+                <input type="text" name="skill5"  class="form-control" id="skill5" aria-describedby="enterYourSkill5"
                     placeholder="Enter Your Skill5" required>
             </div>
 
             <h6 style="margin-top: 20px;">Enter your profile picture</h6>
             <div class="input-group" style="margin-bottom: 40px;">
                 
-                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                <input type="file"  name="dp" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
                     aria-label="Upload" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>

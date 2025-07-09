@@ -1,6 +1,8 @@
-- create the simple portfolio projects
+- create the simple portfolio projects.
 - adding the boostrap plugins.
-- btn class and btn-success for the green button
+- btn class and btn-success for the green button.
+- for the boostrap website link is given below.
+- https://getbootstrap.com/docs/5.3/layout/containers/
 
 - adding the boostrap in links in the HTML file.
 - for javascript links 
@@ -16,4 +18,5 @@
 - form page and create the some questions on this page
 - edit the __init__ page in this projects.
 - create the logic on form page submission details. 
-
+- make sure you can write the methods in the app.routes for example methods['GET','POST'].
+- You can set the sessions for secret key other wise you can get error for RuntimeError in the project. 
