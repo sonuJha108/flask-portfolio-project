@@ -38,11 +38,11 @@
                 </div>
 
                 <!-- addiing the button tag -->
-                <button class="btn btn-primary">Next</button>
+                <button class="btn btn-primary" onclick="tostep2()">Next</button>
             </div>
 
 
-            <div id="education">
+            <div id="education" style="display: none;">
                 <div class="mb-3">
                     <label for="schoolname" class="form-label">School Name</label>
                     <input type="text" name="schoolname" class="form-control" id="schoolname"
@@ -55,9 +55,11 @@
                         aria-describedby="enterYourCollegeName" placeholder="Enter Your College Name">
                 </div>
 
+                <button type="button" class="btn btn-primary btn-sm" onclick="tobackstep1()">Back</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="tostep3()">Next</button>
             </div>
 
-            <div id="contract">
+            <div id="contract" style="display: none;">
                 <div class="mb-3">
                     <label for="phonenumber" class="form-label">Phone No.(Without county code)</label>
                     <input type="text" name="phonenumber" class="form-control" id="phonenumber"
@@ -69,16 +71,20 @@
                     <input type="email" name="email" class="form-control" id="email" aria-describedby="email"
                         placeholder="your@email.com" required>
                 </div>
+                <button type="button" class="btn btn-primary btn-sm" onclick="tobackstep2()">Back</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="tostep4()">Next</button>
             </div>
 
-            <div id="about">
+            <div id="about" style="display: none;">
                 <div class="mb-3">
                     <h6>Please write something about You</h6>
                     <textarea name="about" id="about" class="form-control" rows="10" cols="30" required></textarea>
                 </div>
+                <button type="button" class="btn btn-primary btn-sm" onclick="tobackstep3()">Back</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="tostep5()">Next</button>
             </div>
 
-            <div id="skills">
+            <div id="skills" style="display: none;">
                 <div class="mb-3">
                     <label for="skill1" class="form-label">Enter your skills</label>
                     <input type="text" name="skill1" class="form-control" id="skill1" aria-describedby="enterYourSkill1"
@@ -106,11 +112,12 @@
                     <input type="text" name="skill5" class="form-control" id="skill5" aria-describedby="enterYourSkill5"
                         placeholder="Enter Your Skill5" required>
                 </div>
-
+                <button type="button" class="btn btn-secondry btn-sm" onclick="tobackstep3()">Back</button>
+                <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
 
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+
         </form>
     </div>
 
